@@ -91,6 +91,7 @@ cprint('{} {}'.format(space_count + 3 * ' ','Programmed by Sri Manikanta.'),'gre
 cprint('Enter your choice:',color='cyan',attrs=["bold"])
 cprint('1. Encryption',color='magenta')
 cprint('2. Decryption',color='red')
+cprint('3. Exit', color='blue')
 cprint('~Python3:',end=' ', color='green')
 choice = int(input())
 
@@ -104,6 +105,8 @@ elif choice == 2:
 	file = input()
 	D1 = Decryption(file)
 	D1.decryption()
+elif choice == 3:
+	sys.exit(0)
 else:
 	print('Your choice of selection is not available. Sorry to see you again.')
 
