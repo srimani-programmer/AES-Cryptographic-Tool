@@ -17,8 +17,28 @@ We can encrypt and decrypt any type of file using this tool.
 2. termcolor module is required.
 3. tqdm module is also required.
 
+### Installation:
 
+#### Windows:
 
+1. Install any python v3.x and required packages.
+2. Clone the repository
+3. Run the file Script.py and encrypt and decrypt your required files.
+4. files which you want to encrypt must be at same directory.
+
+#### Mac OSX:
+
+1. Install any python v3.x and required packages.
+2. Clone the repository
+3. Run the file Script.py and encrypt and decrypt your required files.
+4. files which you want to encrypt must be at same directory.
+
+#### Linux:
+
+1. Install any python v3.x and required packages.
+2. Clone the repository
+3. Run the file Script.py and encrypt and decrypt your required files.
+4. files which you want to encrypt must be at same directory.
 
 
 
