@@ -1,12 +1,12 @@
 # A Symmetric Cryptographic Encryption and Decryption in Python
 # done b @Sri_Programmer
-# Python v3.6.6
+# Python v3.7.2
 
 # imports 
 
 import os
 import sys
-import time
+from tqdm import tqdm
 from termcolor import colored,cprint
 
 class Encryption:
@@ -31,12 +31,14 @@ class Encryption:
 			content = original_information.read()
 			content = bytearray(content)
 
+
 			key = 192
-
-			for i,val in enumerate(content):
+			cprint('Encryption Process is in progress...!',color='green',attrs=['bold'])
+			for i,val in tqdm(enumerate(content)):
 				content[i] = val ^ key
-
+			
 			encrypted_file_object.write(content)
+			
 
 		except Exception:
 			cprint('Something went wrong with {}'.format(self.filename),color='red',attrs=['bold','blink'])
@@ -70,9 +72,11 @@ class Decryption:
 
 			cipher_text = bytearray(cipher_text)
 
-			for i,val in enumerate(cipher_text):
-				cipher_text[i] = val^key
+			cprint('Decryption Process is in progress...!',color='green',attrs=['bold'])
 
+			for i,val in tqdm(enumerate(cipher_text)):
+				cipher_text[i] = val^key
+		
 			decrypted_file_object.write(cipher_text)
 			
 
@@ -83,7 +87,6 @@ class Decryption:
 			encrypted_file_object.close()
 			decrypted_file_object.close()
 
-# star_count = 9 * '*'
 space_count = 30 * ' '
 cprint('{} File Encryption And Decryption Tool. {}'.format(space_count,space_count), 'red')
 cprint('{} {}'.format(space_count + 3 * ' ','Programmed by Sri Manikanta.'),'green')
@@ -100,7 +103,6 @@ while True:
 			file = input()
 			E1 = Encryption(file)
 			E1.encryption()
-			time.sleep(1.8)
 			cprint('{} Encryption is done Sucessfully...!'.format(file), color='green',attrs=['bold'])
 			cprint('Do you want to do it again (y/n):',end = ' ', color='red',attrs=['bold','blink'])
 			again_choice  = input()
@@ -114,7 +116,6 @@ while True:
 			file = input()
 			D1 = Decryption(file)
 			D1.decryption()
-			time.sleep(1.8)
 			cprint('{} Decryption is done Sucessfully...!'.format(file),color='green',attrs=['bold'])
 			cprint('Do you want to do it again (y/n):',end = ' ', color='red',attrs=['bold','blink'])
 			again_choice  = input()
