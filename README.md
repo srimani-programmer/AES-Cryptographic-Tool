@@ -40,6 +40,9 @@ We can encrypt and decrypt any type of file using this tool.
 3. Run the file Script.py and encrypt and decrypt your required files.
 4. If the required file is in in the same directory there is no problem at all. otherwise you need to mention the exact path of the file with file name and it's extension.
 
+### Disclaimer:
+
+Please read the license information carefully before using it commercially.
 
 
 
