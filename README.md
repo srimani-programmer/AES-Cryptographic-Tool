@@ -10,4 +10,11 @@ We can encrypt and decrypt any type of file using this tool.
 
 ![](Mainwindow.png)
 
+### Dependencies:
+
+1. python v3.x is required.
+2. termcolor module is required.
+
+
+
 
