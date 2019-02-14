@@ -11,12 +11,6 @@ We can encrypt and decrypt any type of file using this tool.
 ![](Mainwindow.png)
 
 
-### Dependencies:
-
-1. python v3.x is required.
-2. termcolor module is required.
-3. tqdm module is also required.
-
 ### Installation:
 
 #### Windows:
@@ -40,11 +34,11 @@ We can encrypt and decrypt any type of file using this tool.
 3. Run the file Script.py and encrypt and decrypt your required files.
 4. If the required file is in in the same directory there is no problem at all. otherwise you need to mention the exact path of the file with file name and it's extension.
 
-## Dependencies:
+### Dependencies:
 
 1. python v3.x is required.
-2. tqdm module is required.
-3. termcolor is required.
+2. termcolor module is required.
+3. tqdm module is also required.
 
 ### Disclaimer:
 
